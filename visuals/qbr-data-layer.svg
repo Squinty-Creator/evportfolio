@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="'Segoe UI', Inter, system-ui, -apple-system, sans-serif">
+  <title>QBR data layer: sources to unified SQL layer to Copilot agent to client-ready QBR</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c8781"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff6b1a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" fill="#1b1b1d"/>
+
+  <!-- Header -->
+  <text x="60" y="78" font-size="15" font-weight="600" letter-spacing="2" fill="#ff6b1a">SHOWCASE · VEEAM INTERNSHIP</text>
+  <text x="60" y="122" font-size="38" font-weight="600" fill="#f5f1ec">QBR Data Layer for a Copilot Agent</text>
+  <text x="60" y="156" font-size="18" font-weight="300" fill="#d8d4ce">One unified query layer turns a week of QBR prep into an on-demand request.</text>
+
+  <!-- Column labels -->
+  <g font-size="13" font-weight="600" letter-spacing="1.5" fill="#8c8781">
+    <text x="60" y="222">SOURCES</text>
+    <text x="370" y="222">MY BUILD</text>
+    <text x="700" y="222">AGENT</text>
+    <text x="960" y="222">OUTPUT</text>
+  </g>
+
+  <!-- Sources -->
+  <g>
+    <rect x="60" y="250" width="240" height="84" rx="10" fill="#232326" stroke="#34343a" stroke-width="1.5"/>
+    <text x="84" y="286" font-size="20" font-weight="600" fill="#f5f1ec">Data lakehouse</text>
+    <text x="84" y="312" font-size="15" fill="#8c8781">Regional warehouses</text>
+
+    <rect x="60" y="360" width="240" height="84" rx="10" fill="#232326" stroke="#34343a" stroke-width="1.5"/>
+    <text x="84" y="409" font-size="20" font-weight="600" fill="#f5f1ec">ServiceNow</text>
+      </g>
+
+  <!-- Arrows sources -> layer -->
+  <path d="M300,292 C335,292 335,340 366,340" fill="none" stroke="#8c8781" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M300,402 C335,402 335,356 366,356" fill="none" stroke="#8c8781" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Unified layer (highlight) -->
+  <rect x="370" y="250" width="270" height="194" rx="12" fill="#232326" stroke="#ff6b1a" stroke-width="2.5"/>
+  <text x="396" y="290" font-size="22" font-weight="600" fill="#f5f1ec">Unified SQL layer</text>
+  <g font-size="15" fill="#d8d4ce">
+    <text x="396" y="334">• Metric weights validated</text>
+    <text x="410" y="356">with stakeholders</text>
+    <text x="396" y="390">• Fewer tokens, cleaner</text>
+    <text x="410" y="412">PowerPoint output</text>
+  </g>
+
+  <!-- Arrow layer -> agent -->
+  <line x1="640" y1="347" x2="696" y2="347" stroke="#ff6b1a" stroke-width="2.5" marker-end="url(#arrow-accent)"/>
+
+  <!-- Agent (confidential) -->
+  <rect x="700" y="250" width="220" height="194" rx="12" fill="none" stroke="#8c8781" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text x="724" y="290" font-size="20" font-weight="600" fill="#f5f1ec">Teams Copilot</text>
+  <text x="724" y="316" font-size="20" font-weight="600" fill="#f5f1ec">agent</text>
+  <text x="724" y="362" font-size="14" font-weight="600" letter-spacing="1" fill="#8c8781">ARCHITECTURE</text>
+  <text x="724" y="382" font-size="14" font-weight="600" letter-spacing="1" fill="#8c8781">CONFIDENTIAL</text>
+
+  <!-- Arrow agent -> output -->
+  <line x1="920" y1="347" x2="956" y2="347" stroke="#8c8781" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output -->
+  <rect x="960" y="250" width="180" height="194" rx="12" fill="#232326" stroke="#34343a" stroke-width="1.5"/>
+  <text x="984" y="290" font-size="20" font-weight="600" fill="#f5f1ec">Client-ready</text>
+  <text x="984" y="316" font-size="20" font-weight="600" fill="#f5f1ec">QBR deck</text>
+  <text x="984" y="352" font-size="15" fill="#8c8781">Generated on</text>
+  <text x="984" y="374" font-size="15" fill="#8c8781">demand for CSMs</text>
+
+  <!-- Stats -->
+  <line x1="60" y1="500" x2="1140" y2="500" stroke="#34343a" stroke-width="1"/>
+  <g>
+    <text x="60" y="566" font-size="34" font-weight="600" fill="#ff6b1a">500+</text>
+    <text x="60" y="598" font-size="16" fill="#d8d4ce">employees using it</text>
+
+    <text x="300" y="566" font-size="34" font-weight="600" fill="#ff6b1a">Up to 1 week → on demand</text>
+    <text x="300" y="598" font-size="16" fill="#d8d4ce">QBR prep time per account</text>
+
+    <text x="880" y="566" font-size="34" font-weight="600" fill="#ff6b1a">Team of 2</text>
+    <text x="880" y="598" font-size="16" fill="#d8d4ce">I led and owned the data layer</text>
+  </g>
+</svg>
