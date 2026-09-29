@@ -1,4 +1,4 @@
-https://ethan.vernon.cc
+https://squinty-creator.github.io/evportfolio/
 
 SHOWCASE ITEM 1
 Title: QBR Data Layer for a Copilot Agent (Veeam internship; agent architecture is confidential and not shown)

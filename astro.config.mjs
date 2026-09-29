@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://ethan.vernon.cc',
+  site: 'https://squinty-creator.github.io',
+  base: '/evportfolio',
 });
