@@ -4,8 +4,8 @@ SHOWCASE ITEM 1: QBR Data Layer for a Copilot Agent (Veeam internship; agent arc
 Bottom line: CSMs spent up to a week assembling each client QBR, so I built the data layer that lets a Teams Copilot agent generate one on demand. It's now used by 500+ employees.
 Your role: Team of 2. I led the build and owned the SQL data layer; my teammate handled reviews.
 Approach: I unified the lakehouse and ServiceNow data into one query layer instead of letting the agent query each source separately. This cut token spend, ran more efficiently, and produced cleaner formatted PowerPoint output. I validated the metric weight calculations with stakeholders before production.
-Outcome: QBR prep went from up to a week per account to on demand, for 500+ employees.
-Visual: Data-flow diagram (sources -> unified layer -> agent, labeled "architecture confidential"). Still to build.
+Outcome: QBR prep went from up to a week per account to on demand for 500+ employees, an estimated 7,000+ hours saved annually across CSMs.
+Visual: Data-flow diagram (sources -> unified SQL layer -> agent, labeled "confidential" -> QBR deck), built in the site's palette.
 
 SHOWCASE ITEM 2: PutHouse (co-founded venture, puthouse.com)
 Bottom line: Running the options wheel by hand takes constant attention, so we built an AI trader that automates it end to end, and it reached 120+ paying users.
