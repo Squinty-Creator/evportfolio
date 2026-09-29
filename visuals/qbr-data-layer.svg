@@ -38,8 +38,6 @@
   <!-- Stats -->
   <text x="90" y="540" font-size="34" font-weight="600" fill="#ff6b1a">500+</text>
   <text x="90" y="570" font-size="15" fill="#8c8781">employees using it</text>
-  <text x="330" y="540" font-size="34" font-weight="600" fill="#ff6b1a">7,000+ hrs</text>
-  <text x="330" y="570" font-size="15" fill="#8c8781">est. CSM time saved per year</text>
-  <text x="660" y="540" font-size="34" font-weight="600" fill="#ff6b1a">1 week → on demand</text>
-  <text x="660" y="570" font-size="15" fill="#8c8781">QBR prep per account (was up to a week)</text>
+  <text x="400" y="540" font-size="34" font-weight="600" fill="#ff6b1a">7,000+ hrs</text>
+  <text x="400" y="570" font-size="15" fill="#8c8781">est. CSM time saved per year</text>
 </svg>

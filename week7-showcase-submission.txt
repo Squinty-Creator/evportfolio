@@ -1,17 +1,19 @@
 https://ethan.vernon.cc
 
-SHOWCASE ITEM 1: QBR Data Layer for a Copilot Agent (Veeam internship; agent architecture is confidential and not shown)
+SHOWCASE ITEM 1
+Title: QBR Data Layer for a Copilot Agent (Veeam internship; agent architecture is confidential and not shown)
 Bottom line: CSMs spent up to a week assembling each client QBR, so I built the data layer that lets a Teams Copilot agent generate one on demand. It's now used by 500+ employees.
 Your role: Team of 2. I led the build and owned the SQL data layer; my teammate handled reviews.
 Approach: I unified the lakehouse and ServiceNow data into one query layer instead of letting the agent query each source separately. This cut token spend, ran more efficiently, and produced cleaner formatted PowerPoint output. I validated the metric weight calculations with stakeholders before production.
-Outcome: QBR prep went from up to a week per account to on demand for 500+ employees, an estimated 7,000+ hours saved annually across CSMs.
+Outcome: Deployed to 500+ employees, saving an estimated 7,000+ hours of QBR building annually across CSMs.
 Visual: Data-flow diagram (sources -> unified SQL layer -> agent, labeled "confidential" -> QBR deck), built in the site's palette.
 
-SHOWCASE ITEM 2: PutHouse (co-founded venture, puthouse.com)
+SHOWCASE ITEM 2
+Title: PutHouse (co-founded venture, puthouse.com)
 Bottom line: Running the options wheel by hand takes constant attention, so we built an AI trader that automates it end to end, and it reached 120+ paying users.
 Your role: Co-founder, team of 2. I owned strategy and growth, including automating the cash-secured put and covered call cycle.
 Approach: We chose full set-and-forget automation instead of trade alerts that users act on manually, so the system could maximize each user's yield based on their cash and stock holdings.
 Outcome: 120+ paying users across two pricing tiers, with Schwab, IBKR and Alpaca integrations.
-Visual: PutHouse dashboard screenshot with account data hidden. Still to capture.
+Visual: PutHouse site/dashboard screenshot with account data hidden. Still to capture.
 
 Target: Agent Developer and RevOps Analyst roles at Nvidia, Palantir and SpaceX-tier tech companies (Week 3 cluster).
