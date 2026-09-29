@@ -1,0 +1,172 @@
+---
+// Section 4 — Showcase. Five fields per item, in this order:
+// Title, Bottom line, Your role, Approach, Outcome.
+const base = import.meta.env.BASE_URL;
+
+const items = [
+  {
+    title: 'QBR Data Layer for a Copilot Agent',
+    source: 'Internship at Veeam',
+    note: 'Agent architecture is confidential and not shown.',
+    bottomLine:
+      'CSMs spent up to a week assembling each client QBR, so I built the data layer that lets a Teams Copilot agent generate one on demand. It is now used by 500+ employees.',
+    role: 'Team of 2. I led the build and owned the SQL data layer; my teammate handled reviews.',
+    approach:
+      'I unified the lakehouse and ServiceNow data into one query layer instead of letting the agent query each source separately. This cut token spend, ran more efficiently, and produced cleaner formatted PowerPoint output. I validated the metric weight calculations with stakeholders before production.',
+    outcome:
+      'Deployed to 500+ employees, saving an estimated 7,000+ hours of QBR building annually across CSMs.',
+    visual: {
+      src: `${base}/visuals/qbr-data-layer.svg`,
+      alt: 'Data flow: lakehouse and ServiceNow feed my unified SQL layer, which feeds a confidential Copilot agent that produces the QBR deck.',
+    },
+  },
+  {
+    title: 'PutHouse',
+    source: 'Co-founded venture',
+    link: 'https://puthouse.com',
+    bottomLine:
+      'Running the options wheel by hand takes constant attention, so we built an AI trader that automates it end to end, and it reached 120+ paying users.',
+    role: 'Co-founder, team of 2. I owned strategy and growth, including automating the cash-secured put and covered call cycle.',
+    approach:
+      "We chose full set-and-forget automation instead of trade alerts that users act on manually, so the system could maximize each user's yield based on their cash and stock holdings.",
+    outcome: '120+ paying users across two pricing tiers, with Schwab, IBKR and Alpaca integrations.',
+  },
+];
+---
+
+<section class="section" id="showcase">
+  <p class="section-label">Showcase</p>
+  <h2>Selected work.</h2>
+  <div class="items">
+    {
+      items.map((item) => (
+        <article class="item">
+          <dl>
+            <dt>Title</dt>
+            <dd class="title">
+              <h3>{item.title}</h3>
+              <p class="source">
+                {item.source}
+                {item.link && (
+                  <>
+                    {' · '}
+                    <a href={item.link} target="_blank" rel="noopener">
+                      {item.link.replace('https://', '')}
+                    </a>
+                  </>
+                )}
+              </p>
+              {item.note && <p class="note">{item.note}</p>}
+            </dd>
+
+            <dt>Bottom line</dt>
+            <dd>{item.bottomLine}</dd>
+
+            <dt>Your role</dt>
+            <dd>{item.role}</dd>
+
+            <dt>Approach</dt>
+            <dd>{item.approach}</dd>
+
+            <dt>Outcome</dt>
+            <dd class="outcome">{item.outcome}</dd>
+          </dl>
+
+          {item.visual && (
+            <img
+              class="visual"
+              src={item.visual.src}
+              alt={item.visual.alt}
+              width="1200"
+              height="675"
+              loading="lazy"
+            />
+          )}
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .items {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .item {
+    background: var(--bg-raised);
+    border-top: 1px solid var(--accent);
+    padding: 1.75rem 1.5rem;
+  }
+
+  dl {
+    margin: 0;
+    display: grid;
+    gap: 0.35rem 2rem;
+  }
+
+  dt {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding-top: 0.3rem;
+  }
+
+  dd {
+    margin: 0 0 1.25rem;
+    line-height: 1.6;
+  }
+
+  dd:last-of-type {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .source {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0.4rem 0 0;
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: 0.8125rem;
+    font-style: italic;
+    margin: 0.25rem 0 0;
+  }
+
+  .outcome {
+    color: var(--name);
+    padding-left: 1rem;
+    border-left: 1px solid var(--accent);
+  }
+
+  .visual {
+    width: 100%;
+    height: auto;
+    margin-top: 1.75rem;
+    border: 1px solid var(--line);
+  }
+
+  @media (min-width: 40rem) {
+    .item {
+      padding: 2.25rem 2.5rem;
+    }
+
+    dl {
+      grid-template-columns: 8.5rem 1fr;
+      gap: 1.25rem 2rem;
+    }
+
+    dd {
+      margin-bottom: 0;
+    }
+  }
+</style>
